@@ -1,0 +1,378 @@
+#wrapper #header .headTop {
+  background-color: #eaeaea;
+  height: 30px;
+}
+#wrapper #header .headTop .headTopMain {
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+#wrapper #header .headTop .headTopMain::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #header .headTop .headTopMain .left h5 {
+  float: left;
+  margin-right: 5px;
+}
+#wrapper #header .headTop .headTopMain .left p {
+  float: left;
+}
+#wrapper #header .headTop .headTopMain .left p a:first-child {
+  border-right: 1px solid #b3aeae;
+  padding: 5px;
+}
+#wrapper #header .headTop .headTopMain .right {
+  float: right;
+}
+#wrapper #header .headTop .headTopMain .right nav {
+  font-size: 0;
+}
+#wrapper #header .headTop .headTopMain .right nav a {
+  font-size: 12px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #b3aeae;
+}
+#wrapper #header .headTop .headTopMain .right nav a:last-child {
+  border: none;
+  margin-left: 0;
+  padding-right: 0;
+}
+#wrapper #header .headBottom .headBottomMain {
+  width: 1200px;
+  margin: 0 auto;
+}
+#wrapper #header .headBottom .headBottomMain::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #header .headBottom .headBottomMain .logo {
+  float: left;
+}
+#wrapper #header .headBottom .headBottomMain .logo a img {
+  width: 175px;
+  height: 56px;
+  margin: 25px 45px;
+}
+#wrapper #header .headBottom .headBottomMain .search {
+  float: right;
+  margin-top: 35px;
+}
+#wrapper #header .headBottom .headBottomMain .search input:first-child {
+  box-sizing: border-box;
+  width: 490px;
+  height: 32px;
+  padding: 0 4px;
+  border: 3px solid #ea4a36;
+  float: left;
+}
+#wrapper #header .headBottom .headBottomMain .search input:last-child {
+  width: 68px;
+  height: 32px;
+  color: #fff;
+  background-color: #ea4a36;
+  border: none;
+}
+#wrapper #header .headBottom .headBottomMain .search input::-webkit-input-placeholder {
+  color: yellowgreen;
+}
+#wrapper #navWrap {
+  border-bottom: 2px solid #e1251b;
+}
+#wrapper #navWrap .navWrapMain {
+  width: 1200px;
+  margin: 0 auto;
+}
+#wrapper #navWrap .navWrapMain::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #navWrap .navWrapMain a {
+  margin: 0 22px;
+  font-size: 16px;
+  color: #333;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+}
+#wrapper #navWrap .navWrapMain a:first-child {
+  float: left;
+  width: 210px;
+  height: 50px;
+  background-color: #e1251b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+#wrapper #content .containMain {
+  width: 1200px;
+  margin: 0 auto;
+  margin: 15px auto 0 auto;
+}
+#wrapper #content .containMain #navPath {
+  padding: 9px 15px 9px 0;
+  font-size: 0;
+}
+#wrapper #content .containMain #navPath a {
+  font-size: 12px;
+}
+#wrapper #content .containMain #navPath i {
+  padding: 0 5px;
+  font-size: 12px;
+}
+#wrapper #content .containMain #center {
+  margin: 5px 0 15px;
+}
+#wrapper #content .containMain #center::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .containMain #center #left {
+  width: 400px;
+  float: left;
+}
+#wrapper #content .containMain #center #left #leftTop {
+  width: 400px;
+  position: relative;
+}
+#wrapper #content .containMain #center #left #leftTop #smallPic {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #dfdfdf;
+}
+#wrapper #content .containMain #center #left #leftTop #smallPic .mask {
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#wrapper #content .containMain #center #left #leftTop #bigPic {
+  display: none;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: 0;
+  left: 420px;
+  overflow: hidden;
+}
+#wrapper #content .containMain #center #left #leftTop #bigPic img {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  left: 0;
+  top: 0;
+}
+#wrapper #content .containMain #center #left #leftBottom {
+  width: 400px;
+  margin-top: 5px;
+}
+#wrapper #content .containMain #center #left #leftBottom::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .containMain #center #left #leftBottom a {
+  width: 10px;
+  height: 54px;
+  border: 1px solid #ccc;
+  background-color: #ebebeb;
+  text-align: center;
+  line-height: 54px;
+  float: left;
+}
+#wrapper #content .containMain #center #left #leftBottom a:first-child {
+  margin-right: 4px;
+}
+#wrapper #content .containMain #center #left #leftBottom .piclist {
+  width: 372px;
+  height: 56px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+#wrapper #content .containMain #center #left #leftBottom .piclist ul {
+  position: absolute;
+  left: 0;
+  white-space: nowrap;
+  transition: all 0.5s ease;
+}
+#wrapper #content .containMain #center #left #leftBottom .piclist ul li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin-right: 20px;
+}
+#wrapper #content .containMain #center #left #leftBottom .piclist ul li img {
+  width: 50px;
+  height: 50px;
+}
+#wrapper #content .containMain #center .right {
+  float: right;
+  width: 700px;
+}
+#wrapper #content .containMain #center .right .rightTop h3 {
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 15px;
+}
+#wrapper #content .containMain #center .right .rightTop > p {
+  color: #e12228;
+  margin-top: 15px;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap {
+  margin-top: 10px;
+  line-height: 28px;
+  background-color: #fee9ec;
+  padding: 7px;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceTop::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceTop > span {
+  margin-right: 15px;
+  float: left;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceTop .price {
+  float: left;
+  color: #cc1122;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceTop .price > span {
+  font-size: 16px;
+  float: left;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceTop .price p {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceTop .price i {
+  font-size: 12px;
+  float: left;
+  color: #cc1122;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceTop > p {
+  float: right;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceBottom::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceBottom > span {
+  float: left;
+  margin-right: 15px;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceBottom p {
+  width: 520px;
+  line-height: 28px;
+  float: left;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceBottom p > span {
+  color: #999;
+}
+#wrapper #content .containMain #center .right .rightTop .priceWrap .priceBottom p > span:first-child {
+  background-color: #c81623;
+  padding: 3px;
+  color: #fff;
+}
+#wrapper #content .containMain #center .right .rightTop .support {
+  margin-top: 10px;
+  line-height: 28px;
+}
+#wrapper #content .containMain #center .right .rightTop .support::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .containMain #center .right .rightTop .support > span {
+  margin-right: 15px;
+  float: left;
+}
+#wrapper #content .containMain #center .right .rightTop .support > p {
+  float: left;
+  color: #999;
+}
+#wrapper #content .containMain #center .right .rightTop .address {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+  line-height: 28px;
+  margin-top: 10px;
+}
+#wrapper #content .containMain #center .right .rightTop .address::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .containMain #center .right .rightTop .address > span {
+  margin-right: 15px;
+  float: left;
+}
+#wrapper #content .containMain #center .right .rightTop .address > p {
+  float: left;
+  color: #999;
+}
+#wrapper #content .containMain #center .right .rightBottom {
+  margin-top: 10px;
+  line-height: 28px;
+}
+#wrapper #content .containMain #center .right .rightBottom .choose::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .containMain #center .right .rightBottom .choose #mark {
+  height: 30px;
+  background-color: snow;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+}
+#wrapper #content .containMain #center .right .rightBottom .choose #mark a {
+  color: red;
+  margin-left: 20px;
+}
+#wrapper #content .containMain #center .right .rightBottom .chooseWrap dl {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+#wrapper #content .containMain #center .right .rightBottom .chooseWrap dl::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .containMain #center .right .rightBottom .chooseWrap dl dt {
+  margin-right: 15px;
+  float: left;
+}
+#wrapper #content .containMain #center .right .rightBottom .chooseWrap dl dd {
+  float: left;
+  margin-right: 5px;
+  color: #666;
+  line-height: 24px;
+  padding: 2px 14px;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #bbb;
+}
+#wrapper #content .containMain #center .right .rightBottom .chooseWrap dl dd:first-of-type {
+  color: red;
+}
+/*# sourceMappingURL=index.css.map */
