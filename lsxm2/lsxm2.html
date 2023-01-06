@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat";
+      }
+      body {
+        background-color: #e9d5ca;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        width: 300px;
+        cursor: pointer;
+        position: relative;
+      }
+      .select {
+        background-color: #201e1e;
+        padding: 20px;
+        color: #fff;
+        font-weight: 500;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .options-list {
+        width: 100%;
+        position: absolute;
+        background-color: #f9f9f9;
+        max-height: 180px;
+        overflow-y: auto;
+        padding: 0 20px;
+        margin-top: 2px;
+        border-radius: 0 0 10px 10px;
+        transition: 0.2s linear;
+        height: 0;
+      }
+      .option {
+        padding: 8px 0;
+        font-weight: 500;
+        font-size: 16px;
+        transition: 0.1s ease-in-out;
+      }
+      .option:hover,
+      .option.selected {
+        color: #00a8ff;
+      }
+      .options-list.active {
+        height: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="select">
+        <span>Select Language</span>
+        <i class="fa fa-angle-down"></i>
+      </div>
+      <div class="options-list">
+        <div class="option">Chinese</div>
+        <div class="option">English</div>
+        <div class="option">Hindi</div>
+        <div class="option">Spanish</div>
+        <div class="option">French</div>
+        <div class="option">Japanese</div>
+        <div class="option">Korean</div>
+      </div>
+    </div>
+
+    <script>
+      const select = document.querySelector(".select");
+      const options_list = document.querySelector(".options-list");
+      const options = document.querySelectorAll(".option");
+      select.addEventListener("click", () => {
+        options_list.classList.toggle("active");
+        select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+      });
+      options.forEach((option) =>
+        option.addEventListener("click", () => {
+          options.forEach((option) => {
+            option.classList.remove("selected");
+          });
+          select.querySelector("span").innerHTML = option.innerHTML;
+          option.classList.add("selected");
+          options_list.classList.toggle("active");
+          select
+            .querySelector(".fa-angle-down")
+            .classList.toggle("fa-angle-up");
+        })
+      );
+    </script>
+  </body>
+</html>

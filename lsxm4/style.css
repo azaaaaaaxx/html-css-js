@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 45%;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  border: 10px solid black;
+}
+.images {
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  color: #fff;
+  font-size: 30px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  color: #fff;
+  font-size: 30px;
+  opacity: 0.6;
+  cursor: pointer;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300;1,400;1,500;1,700&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: "Ubuntu", sans-serif;
+      }
+      body {
+        background-color: rgb(32, 8, 22);
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      .container {
+        position: absolute;
+        left: 30%;
+        top: 30px;
+        width: 80px;
+        background-color: #fff;
+        border-radius: 20px;
+        transition: 0.5s;
+        box-shadow: 9px -9px 18px #b3b3b3, -9px 9px 18px #ffffff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .container.active {
+        width: 400px;
+      }
+      .img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 10px;
+        transition: 0.5s;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+      }
+      .container.active .img {
+        width: 200px;
+        height: 200px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fit;
+      }
+      .btn {
+        cursor: pointer;
+        position: relative;
+        width: 80px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding: 0 22px;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      .btn::before {
+        content: "";
+        width: 35px;
+        height: 2px;
+        background-color: #333;
+        position: absolute;
+        transform: translateY(-10px);
+        transition: 0.5s;
+      }
+      .btn::after {
+        content: "";
+        width: 35px;
+        height: 2px;
+        background-color: #333;
+        position: absolute;
+        transform: translateY(10px);
+        transition: 0.5s;
+        box-shadow: 0 -10px #333;
+      }
+      .container.active .btn::before {
+        transform: translateY(0) rotate(45deg);
+      }
+      .container.active .btn::after {
+        transform: translateY(0) rotate(-45deg);
+        box-shadow: none;
+      }
+      .list {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 10px;
+        transition: 0.5s;
+      }
+      .container.active .list {
+        padding: 10px 20px;
+      }
+      a {
+        position: relative;
+        display: flex;
+        color: #111;
+        border-radius: 10px;
+      }
+      a:hover {
+        background-color: #0084ff;
+        color: #fff;
+      }
+      a .icon {
+        position: relative;
+        min-width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+      }
+      a .text {
+        height: 60px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25em;
+        transform: scale(0);
+        transition: 0.5s;
+      }
+      .container.active a .text {
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn"></div>
+      <div class="img">
+        <img src="./img/OIP-a.jpg" alt="图片" />
+      </div>
+      <div class="list">
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <soan class="text">Profile</soan>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="chatbox-outline"></ion-icon>
+            </span>
+            <soan class="text">Inbox</soan>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="cog-outline"></ion-icon>
+            </span>
+            <soan class="text">Settings</soan>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="help-outline"></ion-icon>
+            </span>
+            <soan class="text">Support</soan>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="log-out-outline"></ion-icon>
+            </span>
+            <soan class="text">Logout</soan>
+          </a>
+        </li>
+      </div>
+    </div>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script>
+      const btn = document.querySelector(".btn");
+      const container = document.querySelector(".container");
+      btn.addEventListener("click", () => {
+        container.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
